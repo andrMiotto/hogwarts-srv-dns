@@ -1,0 +1,7 @@
+options {
+        directory "/var/cache/bind";
+        allow-query { any; };      // Permite que qualquer um (incluindo seu PC) consulte
+        recursion no;              // Segurança: não responde sobre sites da internet, só os bruxos
+        dnssec-validation auto;
+        listen-on-v6 { any; };
+};

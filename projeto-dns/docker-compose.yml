@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  bind9:
+    image: ubuntu/bind9:latest
+    container_name: mundo-bruxo-dns
+    platform: linux/amd64 
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    volumes:
+      - ./config:/etc/bind
+      - ./zones:/etc/bind/zones
+    restart: unless-stopped

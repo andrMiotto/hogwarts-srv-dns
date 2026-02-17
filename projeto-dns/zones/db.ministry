@@ -1,0 +1,18 @@
+$TTL 3600
+@       IN      SOA     ns.ministryofmagic.gov.uk. admin.ministryofmagic.gov.uk. (
+                    2026021601 ; Serial
+                    3600       ; Refresh
+                    1800       ; Retry
+                    604800     ; Expire
+                    86400 )    ; Negative Cache TTL
+
+@       IN      NS      ns.ministryofmagic.gov.uk.
+
+@       IN      MX  10  owl-post.ministryofmagic.gov.uk.
+
+ns                      IN      A       192.168.20.2  
+
+; Departamentos e Serviços
+department-of-mysteries IN      A       192.168.20.10
+auror-headquarters      IN      A       192.168.20.11
+owl-post                IN      A       192.168.20.12 
